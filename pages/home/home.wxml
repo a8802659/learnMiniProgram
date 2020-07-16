@@ -4,3 +4,18 @@
 
 <view>1.知识点1</view>
 <view>哈哈哈</view>
+
+<!-- 2.获取用户信息 -->
+<view>获取用户信息按钮</view>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="handleGetUserInFO">获取授权</button>
+
+<!-- 3.展示用户信息 -->
+<!-- <open-data type="groupName" open-gid="xxxxxx"></open-data> 只有当前用户在此群内才能拉取到群名称-->
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName" lang="zh_CN"></open-data>
+<open-data type="userGender" lang="zh_CN"></open-data>
+<open-data type="userCity" lang="zh_CN"></open-data>
+<open-data type="userProvince" lang="zh_CN"></open-data>
+<open-data type="userCountry" lang="zh_CN"></open-data>
+<open-data type="userLanguage" lang="zh_CN"></open-data>
+<open-data type="userAvatarUrl"></open-data>
