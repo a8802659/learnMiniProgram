@@ -1,0 +1,4 @@
+/* pages/view/view.wxss */
+.hover-view {
+  background-color: violet;
+}

@@ -1,0 +1,46 @@
+<!--pages/input/input.wxml-->
+<input></input>
+<input type="digit"></input>
+<input password></input>
+<input placeholder="asd"></input>
+ <input class="weui-input"  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+ <!-- 事件 -->
+ <input bindblur="handleBlur" bindfocus="handleFocus" bindinput="handleInput"></input>
+<!-- 
+value 输入框的初始内容
+type  input 的类型
+    text文本输入键盘
+    number数字输入键盘
+    idcard身份证输入键盘
+    digit带小数点的数字键盘
+password 是否是密码类型
+placeholder 输入框为空时占位符
+placeholder-style 指定 placeholder 的样式
+placeholder-class 指定 placeholder 的样式类
+disabled 是否禁用
+maxlength 最大输入长度，设置为 -1 的时候不限制最大长度
+cursor-spacing 指定光标与键盘的距离，取 input 距离底部的距离和 cursor-spacing 指定的距离的最小值作为光标与键盘的距离
+
+auto-focus(即将废弃，请直接使用 focus )自动聚焦，拉起键盘
+focus  boolean获取焦点
+confirm-type 设置键盘右下角按钮的文字，仅在type='text'时生效
+    send右下角按钮为“发送”
+    search右下角按钮为“搜索”
+    next右下角按钮为“下一个”
+    go右下角按钮为“前往”
+    done右下角按钮为“完成”
+
+confirm-hold boolean点击键盘右下角按钮时是否保持键盘不收起
+cursor  number指定focus时的光标位置
+selection-start number -1光标起始位置，自动聚集时有效，需与selection-end搭配使用
+selection-end number -1光标结束位置，自动聚集时有效，需与selection-start搭配使用
+adjust-position 键盘弹起时，是否自动上推页面
+hold-keyboard focus时，点击页面的时候不收起键盘
+
+
+bindinput 键盘输入时触发，event.detail = {value, cursor, keyCode}，keyCode 为键值，2.1.0 起支持，处理函数可以直接 return 一个字符串，将替换输入框的内容。
+bindfocus 输入框聚焦时触发，event.detail = { value, height }，height 为键盘高度，
+bindblur 输入框失去焦点时触发，event.detail = {value: value}
+bindconfirm 点击完成按钮时触发，event.detail = {value: value}
+bindkeyboardheightchange 键盘高度发生变化的时候触发此事件，event.detail = {height: height, duration: duration}
+ -->

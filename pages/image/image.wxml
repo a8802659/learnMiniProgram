@@ -1,0 +1,26 @@
+<!--pages/image/image.wxml-->
+<!-- 1.image 基本使用  默认 320x249-->
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+  <button bindtap="handleChooseAlbum">选择图片</button>
+  <image src="{{imagePath}}"></image>
+  <text>haha</text>
+  <!-- 2.lazy-load /bindload-->
+  <view>------------------------</view>
+  <image wx:for="{{1}}"
+         src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+         bindload="handleImageLoad" 
+         lazy-load="true"></image>
+  <!-- 3.show-menu-by-longpress -->
+  <image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"
+         bindload="handleImageLoad" 
+         lazy-load="true"
+         show-menu-by-longpress ></image>
+  <!-- 
+src图片资源地址 本地路径/远程地址
+mode图片裁剪、缩放的模式
+webp默认不解析 webP 格式，只支持网络资源
+lazy-load图片懒加载，在即将进入一定范围（上下三屏）时才开始加载
+show-menu-by-longpress开启长按图片显示识别小程序码菜单
+binderror当错误发生时触发，event.detail = {errMsg}
+bindload当图片载入完毕时触发，event.detail = {height, width}
+   -->

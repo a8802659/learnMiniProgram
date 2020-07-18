@@ -1,11 +1,10 @@
-// pages/home/home.js
+// pages/scroll-view/scroll-view.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
 
+  },
+  handleScroll(e){
+    console.log('正在滚动',e)
   },
 
   /**
@@ -55,7 +54,7 @@ Page({
    */
   onReachBottom: function () {
 
-   },
+  },
 
   /**
    * 用户点击右上角分享

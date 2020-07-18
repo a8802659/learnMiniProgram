@@ -1,13 +1,29 @@
-// pages/home/home.js
+// pages/image/image.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    imagePath:''
   },
-
+  handleChooseAlbum(){
+    console.log('...')
+    // 系统API，让用户在相册中选择图片或者拍照
+    wx.chooseImage({
+      success:res => {
+        // 1取出路径
+        const path = res.tempFilePaths[0]
+        // 2.设置imagePath
+        this.setData({
+          imagePath:path
+        })
+      }
+    })
+  },
+  handleImageLoad(){
+    console.log('图片加载完成')
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -55,7 +71,7 @@ Page({
    */
   onReachBottom: function () {
 
-   },
+  },
 
   /**
    * 用户点击右上角分享

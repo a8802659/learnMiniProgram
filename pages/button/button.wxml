@@ -1,0 +1,12 @@
+<!--pages/button/button.wxml-->
+<!-- 1.button 基本使用 -->
+<button >按钮block</button>
+<button loading="false">按钮loading</button>
+<button disabled="false">按钮disabled</button>
+<button plain="true">按钮 plain是否镂空 背景透明</button>
+<button size="mini" type="primary">按钮primary</button>
+<button size="mini" type="default">按钮default</button>
+<button size="mini" type="warn">按钮warn</button>
+
+<button size="mini" hover-class="button-hover">按钮点击后样式 </button>
+<button size="mini" hover-class="pressed">按钮点击后样式 </button>
