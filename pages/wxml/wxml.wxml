@@ -1,0 +1,9 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- 小程序不能DOM操作：所以需要变量来操作元素 -->
+<button size="mini" bindtap="handleSwitchColor">按钮</button>
+<view class="box {{isActive ? 'active' : ''}}">呵呵</view>
+
+<view>{{nowtime}}</view>
+
+<!-- <map longitude="117.9386151926344" latitude="26.02387334223433" setting="{{setting}}" scale="16" show-location></map> -->
+

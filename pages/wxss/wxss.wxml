@@ -1,0 +1,18 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- 1.行内 -->
+<view style="color:red;font-size:30px">哈哈</view>
+<!-- 1.2 页内样式 -->
+<view class="box">哈哈</view>
+<!-- 1.3全局样式 -->
+<view class="box1">呵呵</view>
+<!-- 
+  样式优先级：行内>页内样式>全局样式
+
+  主要支持的css选择器
+  .class   
+  #id
+  element(组件名称)   选择组件
+  element,element 
+  ::after
+  ::before 
+ -->
