@@ -1,0 +1,5 @@
+<!--components/my-slot/my-slot.wxml-->
+<view>-------单插槽------------</view>
+<view>我是my-slot组件头部</view>
+<slot/>
+<view>我是my-slot组件尾部</view>
