@@ -1,2 +1,29 @@
 <!--pages/home/home.wxml-->
 <text>pages/home/home.wxml</text>
+<!-- 1.navigator組件跳转 -->
+<navigator url="/pages/detail/detail">
+  跳到详情页
+</navigator>
+
+<!-- 2.open-type -->
+<navigator url="/pages/detail/detail" open-type="redirect">
+  跳到详情页(redirect)
+</navigator>
+
+<!-- 3.switchTab -->
+<navigator url="/pages/about/about" open-type="switchTab">
+  跳到详情页(switchTab)
+</navigator>
+
+<!-- 3.reLaunch -->
+<navigator url="/pages/detail/detail" open-type="reLaunch">
+  跳到详情页(reLaunch)
+</navigator>
+
+<!-- 4.数据传递 -->
+<navigator url="/pages/detail/detail?name=wzf&age=18&height=1.88">
+  跳到详情页(传递数据)
+</navigator>
+<view>{{title}}</view>
+<!-- 5.通过代码进行跳转 -->
+<button size="mini" bind:tap="handlepushdetail">跳转到详情页</button>
