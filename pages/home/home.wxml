@@ -1,2 +1,19 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 1.轮播图 -->
+<f-swiper list="{{banners}}"/>
+
+<!-- 2.推荐数据展示 -->
+<f-recommend list="{{recommends}}" bind:imageLoad="handleImageLoad" />
+
+<!-- 3.展示本周流行 -->
+<f-popular/>
+
+<!-- 4.tab-control -->
+<f-tab-control class="{{ifTabFixed ? 'fixed' : ''}}" titles="{{titles}}" bind:tapclick="handleTabClick" id="tab-control"/>
+<f-tab-control titles="{{titles}}" wx:if="{{ifTabFixed}}"/>
+
+<!-- 5.展示商品数据 -->
+<f-goods goods="{{goods[currentType].list}}"/>
+
+<!-- 6.回到顶部 -->
+<f-backtop wx:if="{{isShowBackTop}}"/>

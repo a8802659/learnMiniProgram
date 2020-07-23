@@ -1,0 +1,5 @@
+<!--components/f-backtop/f-backtop.wxml-->
+<view class="back-top" bind:tap="handleBackTop">
+  <image class="image" src="/assets/images/common/top.png"></image>
+</view>
+
